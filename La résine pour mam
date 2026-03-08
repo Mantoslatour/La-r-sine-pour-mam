@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir la langue / Choose language</title>
+    
+    <style>
+        /* 1. ON CENTRE TOUT AU MILIEU DE L'ÉCRAN */
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Aligne les objets verticalement */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
+        h1 { margin-bottom: 30px; }
+
+        /* 2. LE LOOK DES BOUTONS */
+        .btn-langue {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 10px; /* Espace entre les deux boutons */
+            width: 250px;
+        }
+
+        .btn-langue:hover {
+            transform: scale(1.1);
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Choisissez votre langue <br> Choose your language</h1>
+
+    <!-- BOUTON FRANÇAIS -->
+    <a href="page.html?lang=fr" style="text-decoration: none;">
+        <button class="btn-langue">Français</button>
+    </a>
+
+    <!-- BOUTON ANGLAIS -->
+    <a href="page.html?lang=en" style="text-decoration: none;">
+        <button class="btn-langue">English</button>
+    </a>
+
+</body>
+</html>
